@@ -20,6 +20,9 @@
     "eject": "react-scripts eject",
     "serve": "npx serve -s build -p 3000"
   },
+  "engines": {
+  "node": "18.x"
+},
   "eslintConfig": {
     "extends": [
       "react-app",
