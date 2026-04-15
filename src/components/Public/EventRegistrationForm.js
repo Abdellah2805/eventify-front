@@ -1,8 +1,7 @@
 // src/components/Public/EventRegistrationForm.js
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { registerToEvent } from '../../services/API';
 
 const EventRegistrationForm = ({ eventId }) => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
@@ -14,8 +13,6 @@ const EventRegistrationForm = ({ eventId }) => {
         setFeedback(null);
 
         try {
-            // Appel de l'API d'inscription
-            const response = await registerToEvent(eventId, data);
             
             // Si Laravel retourne 201 Created (ou 200 OK)
             setFeedback({ 
