@@ -21,7 +21,7 @@
     "serve": "npx serve -s build -p 3000"
   },
   "engines": {
-  "node": "18.x"
+  "node": "20.x"
 },
   "eslintConfig": {
     "extends": [
